@@ -24,5 +24,5 @@ syntax:
 
 */
 
-let hostal_allocation = age > 18 ? true : false
-console.log( hostal_allocation ? "you are welcome to hostal" : "stay with parents")
+let hostal_allocation = age > 18 ? (answer == 'teacher' || answer == "student") ? true :false : false
+console.log( hostal_allocation ? "you are welcome to hostal" : "stay where you are")
