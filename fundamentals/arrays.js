@@ -64,24 +64,37 @@
  * Reduce
  */
 // -> finding the sum of the array
-let sum = [23,34,123,44].reduce((acc, current)=> acc + current, 0);
-console.log(sum)
+// let sum = [23,34,123,44].reduce((acc, current)=> acc + current, 0);
+// console.log(sum)
 
-// -> find min and max
-let min = [12,-34, 10,4].reduce((acc, current)=> acc <= current ? acc : current, Infinity)
-console.log(min);
+// // -> find min and max
+// let min = [12,-34, 10,4].reduce((acc, current)=> acc <= current ? acc : current, Infinity)
+// console.log(min);
 
-let max = [12,-34, 10,4].reduce((acc, current)=> acc > current ? acc : current, -Infinity);
-console.log(`max ${max}`)
+// let max = [12,-34, 10,4].reduce((acc, current)=> acc > current ? acc : current, -Infinity);
+// console.log(`max ${max}`)
 
-// finding the unique value
-// we use accumualator as a array
-let unique_values = [23,34,23,54,34,5,23].reduce(
-    (acc, current)=>{
-        if (acc.indexOf(current) === -1){
-            acc.push(current)
-        }
-        return acc
-    }, []
-)
-console.log(`unique values in the array ${[23,34,23,54,34,5,23]} is ${unique_values}`);
+// // finding the unique value
+// // we use accumualator as a array
+// let unique_values = [23,34,23,54,34,5,23].reduce(
+//     (acc, current)=>{
+//         if (acc.indexOf(current) === -1){
+//             acc.push(current)
+//         }
+//         return acc
+//     }, []
+// )
+// console.log(`unique values in the array ${[23,34,23,54,34,5,23]} is ${unique_values}`);
+
+
+/**
+ * filter  
+ * Apply a function over an array and filter it out
+ */
+// let valid_ = [12,34,23,54,10, 5].filter( element=> element > 18)
+// console.log(`valid array : ${valid_}`)
+
+
+/**
+ * splice  
+ */
