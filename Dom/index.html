@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: darkmagenta;
+        }
+        .container{
+            padding: 1.3rem;
+            border-radius: 0.5em;
+            text-align: center;
+            background-color: #313131;
+            color: white;
+        }
+        .counter-value{
+            font-size: 32px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Learn JS</h2>
+        <span class="counter-value">1200</span>
+    </div>
+    <script>
+        //getting the element
+        counter = document.querySelector('.counter-value');
+        text_heading = document.querySelector(".heading");
+        let count = 1;
+        setInterval(()=>{
+            if(count < 999){
+                count++;
+                counter.innerText = count;
+            }
+        }, 1)
+        setTimeout(()=>{
+            text_heading.innerText= "keep on learning JS"
+        },1000)
+    </script>
+</body>
+</html>
