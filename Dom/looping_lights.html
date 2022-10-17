@@ -8,8 +8,8 @@
     <style>
         body{
             display: flex;
-            flex-direction: row;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-around;
             align-items: center;
             height: 100vh;
             background-color: black;
@@ -17,6 +17,13 @@
         .container {
             border: 2px solid white;
             display: flex;
+
+        }
+        .btn {
+            padding: 0.3em 1em;
+            border-radius: 1em;
+            font-size: 1.4em;
+            border: 0;
         }
         .key {
             font-size: 5em;
@@ -65,6 +72,10 @@
             <div class="key violet">H</div>
             <div class="key orange">I</div>
         </div>
+            <!-- change the backgroung  -->
+            <footer>
+                <button id="bgchanger" class="btn btn-bg-changer">Change Color</button>
+            </footer>
         <script src="./looping.js"></script>
 </body>
 </html>
