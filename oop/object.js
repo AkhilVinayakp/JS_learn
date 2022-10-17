@@ -98,3 +98,6 @@ testObj = createClone(sampleObj, addFlag=true);
 console.table(testObj)
 console.table(sampleObj)
 console.log(`compairing ${testObj === sampleObj}`)
+
+
+// 
