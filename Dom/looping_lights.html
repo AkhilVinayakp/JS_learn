@@ -19,6 +19,9 @@
             display: flex;
 
         }
+        .current_speed{
+            color: whitesmoke;  
+        }
         .btn {
             padding: 0.3em 1em;
             border-radius: 1em;
@@ -72,10 +75,16 @@
             <div class="key violet">H</div>
             <div class="key orange">I</div>
         </div>
-            <!-- change the backgroung  -->
-            <footer>
-                <button id="bgchanger" class="btn btn-bg-changer">Change Color</button>
-            </footer>
+        <!-- change the backgroung  -->
+        <footer>
+            <button id="bgchanger" class="btn btn-bg-changer">Change Color</button>
+            <button id="spchanger" class="btn">Increase speed by 25</button>
+            <button id="spchanger_inv" class="btn">Decrease speed by 25</button>
+        </footer>
+        <div>
+            <h5 class="current_speed">Del</h5>
+        </div>
+            
         <script src="./looping.js"></script>
 </body>
 </html>
